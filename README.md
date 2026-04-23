@@ -24,6 +24,15 @@ Desarrollo y entrenamiento desde cero de *Word Embeddings* personalizados, utili
   * Análisis de similaridad semántica y sintáctica latente.
   * Reducción de dimensionalidad y visualización interactiva del espacio vectorial en 2D utilizando `t-SNE` y `Plotly`.
 
+### 3. [Desafío 3: Modelo de lenguaje con tokenización por caracteres](Desafio_3.ipynb)
+Desarrollo de modelos de lenguaje basados en caracteres utilizando Redes Neuronales Recurrentes, entrenados sobre la obra literaria "La vuelta al mundo en 80 días" de Julio Verne.
+* **Técnicas implementadas:**
+  * Preprocesamiento y tokenización a nivel de caracteres de un corpus literario.
+  * Estructuración del *dataset* para el modelado de secuencias bajo la arquitectura *Many-to-Many*.
+  * Entrenamiento y evaluación comparativa de arquitecturas neuronales recurrentes (`SimpleRNN`, `GRU` y `LSTM`) utilizando `TensorFlow/Keras`.
+  * Desarrollo de un *callback* personalizado para el cálculo de la métrica de Perplejidad (*Perplexity*) y detención temprana (*Early Stopping*).
+  * Inferencia y generación de texto utilizando diferentes algoritmos de decodificación: *Greedy Search* y *Beam Search* (determinista y estocástico, analizando el impacto del hiperparámetro de temperatura).
+
 ---
 
 ## 🚀 Entorno de Ejecución
