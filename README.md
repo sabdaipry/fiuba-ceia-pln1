@@ -32,6 +32,16 @@ Desarrollo de modelos de lenguaje basados en caracteres utilizando Redes Neurona
   * Entrenamiento y evaluación comparativa de arquitecturas neuronales recurrentes (`SimpleRNN`, `GRU` y `LSTM`) utilizando `TensorFlow/Keras`.
   * Desarrollo de un *callback* personalizado para el cálculo de la métrica de Perplejidad (*Perplexity*) y detención temprana (*Early Stopping*).
   * Inferencia y generación de texto utilizando diferentes algoritmos de decodificación: *Greedy Search* y *Beam Search* (determinista y estocástico, analizando el impacto del hiperparámetro de temperatura).
+ 
+### 4. [Desafío 4: Bot QA con Arquitectura Seq2Seq (Encoder-Decoder)](Desafio_4_SP.ipynb)
+Desarrollo de un agente conversacional (Bot QA) utilizando una arquitectura profunda de secuencias *Encoder-Decoder* con celdas LSTM, entrenado sobre el *dataset* ConvAI2.
+* **Técnicas implementadas:**
+  * Preprocesamiento de texto conversacional (limpieza de contracciones, *tokens* de inicio/fin `<sos>`/`<eos>` y estrategias de *padding* asimétrico `pre`/`post`).
+  * Integración de *Word Embeddings* pre-entrenados (GloVe) con manejo de vocabulario fuera del corpus (OOV).
+  * Entrenamiento de modelo Seq2Seq utilizando la API funcional de `TensorFlow/Keras` con transferencia de estados latentes.
+  * Extracción de modelos de inferencia independientes (*Encoder* y *Decoder*) para procesamiento paso a paso.
+  * Implementación y comparación de múltiples estrategias de decodificación avanzadas: *Greedy Search*, *Beam Search* (con penalización de repetición) y *Temperature Sampling*.
+  * Experimentación con memoria de contexto multi-turno mediante el promedio de estados latentes y análisis teórico sobre el colapso de respuestas y la necesidad de mecanismos de atención (*Cross-Attention* / *Transformers*).
 
 ---
 
